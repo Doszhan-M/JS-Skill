@@ -1,5 +1,6 @@
 window.addEventListener('load', slider => {
 
+
 // Find buttons
 const btnLeft = document.querySelector('.btn_left')
 const btnRight = document.querySelector('.btn_right')
