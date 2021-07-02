@@ -1,3 +1,2 @@
-console.log(1)
+console.log(a)
 
-const websocket = new WebSocket('wss://echo.websocket.org/');

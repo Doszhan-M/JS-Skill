@@ -11,3 +11,4 @@ const myPromise = new Promise((resolve, reject) => {
 
 myPromise.then(number => console.log('Завершено успешно', number))
 myPromise.catch(number => console.log('Завершено с ошибкой', number))
+a = 4

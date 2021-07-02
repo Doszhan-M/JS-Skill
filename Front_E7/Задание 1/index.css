@@ -1,0 +1,8 @@
+body {
+    display: flex;
+}
+body div {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
