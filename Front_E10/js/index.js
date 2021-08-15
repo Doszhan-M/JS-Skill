@@ -5,6 +5,11 @@ $(window).ready(function () {
 });
 
 
+// нажатие на бургер открывает меню
+$('.header__burger').click(function(event) {
+  $('header, .header__burger, .header__titles').toggleClass('active');
+})
+
 // Анимация при достижении блока в зону видимости
 var windowHeight = $(window).height();
 function animation() {
