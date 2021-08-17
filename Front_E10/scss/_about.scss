@@ -5,7 +5,7 @@ main {
 }
 
 $icon_color: rgb(14, 197, 197);
-$text_color: rgb(109, 105, 105);
+$text_color: rgb(161, 161, 161);
 
 %h3_text {
   font-size: 20px;
@@ -22,7 +22,7 @@ $text_color: rgb(109, 105, 105);
   font-weight: 500;
 }
 
-section {
+.about {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,7 +74,7 @@ section {
   }
 }
 
-.section-content {
+.about__content{
   display: flex;
   flex-direction: column;
   width: 80%;
@@ -155,6 +155,12 @@ section {
         transform: translateX(0%);
         transition: all 0.8s ease 0.7s;
 
+        @media screen and (max-width: 812px) {
+          & {
+            transition: all 0.8s ease 0s;
+          }
+        }
+
         &:hover {
           transform: scale(2);
           transition: all 0.5s ease;
@@ -196,6 +202,11 @@ section {
     margin-left: -5%;
     width: 45%;
 
+    &._animation {
+      opacity: 1;
+      transform: translate(0px, 0px);
+    }
+    
     @media screen and (max-width: 812px) {
       & {
         width: 95%;
@@ -238,6 +249,11 @@ section {
     display: flex;
     flex-direction: column;
     width: 50%;
+
+    &._animation {
+      opacity: 1;
+      transform: translate(0px, 0px);
+    }
 
     @media screen and (max-width: 812px) {
       & {
