@@ -191,6 +191,10 @@ body {
   margin-left: 4%;
 }
 
+.header .header__body .header__nav .header__titles a.header_active, .header .header__body .header__nav .header__titles a:hover {
+  color: #e31b6d;
+}
+
 @media screen and (max-width: 812px) {
   .header .header__body .header__nav .header__titles a {
     font-family: "OxinWar", Arial, sans-serif;
