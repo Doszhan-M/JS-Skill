@@ -1,9 +1,9 @@
 $(window).ready(function () {
   // шаг вниз перед загрузкой и показать прелоадер
-  $('html, body').animate({ scrollTop: $("#projects").offset().top }, 1);
-  $('html, body').animate({ scrollTop: $("#preview").offset().top }, 1);
-  jQuery('#loading').fadeOut(2000);
-
+  $('html, body').animate({ scrollTop: $("#about").offset().top }, 300);
+  $('html, body').animate({ scrollTop: $("#projects").offset().top }, 100);
+  $('html, body').animate({ scrollTop: $("#preview").offset().top }, 10);
+  jQuery('#loading').fadeOut(3000);
 });
 
 
