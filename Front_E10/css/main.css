@@ -726,6 +726,7 @@ main {
 }
 
 .projects .projects__content {
+  background-color: aqua;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1262,6 +1263,7 @@ main {
 
 @media screen and (max-width: 812px) {
   .contact .contact__content .contact__form .contact__sumbit {
+    margin-top: 3%;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;

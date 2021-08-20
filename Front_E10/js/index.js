@@ -56,8 +56,14 @@ function animationBigItem() {
   $('.big_anim_item').each(function () {
     var self = $(this),
         height = self.offset().top + self.height();
+
+    // вычислить высоту подложки и задать ее, чтобы не дергалас страница
+    let substrate = document.querySelector('.projects__content')
+    const substrate_height = substrate.clientHeight
+    console.log(substrate_height)
+
     if (isMobile()) {
-      if ($(document).scrollTop() + windowHeight >= height *1.1) {
+      if ($(document).scrollTop() + windowHeight >= height + 1500 ) {
         self.addClass('_animation')
       } 
       if ($(document).scrollTop() + windowHeight <= height - 3500) {
@@ -68,8 +74,10 @@ function animationBigItem() {
       if ($(document).scrollTop() + windowHeight >= height / 2) {
         self.addClass('_animation')
       } 
-      if ($(document).scrollTop() + windowHeight <= height - 1200 ) {
+      if ($(document).scrollTop() + windowHeight <= height - 1000 ) {
+        substrate.style.height = substrate_height + 'px'
         self.removeClass('_animation')
+
       }
     }
   });
