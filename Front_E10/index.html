@@ -95,7 +95,8 @@
                 <div class="about_myself">
                     <div class="about_myself__desc">
                         <div class="about_myself__photo">
-                            <img src="img/my_photo.jpg" alt="my photo">
+                            <img src="img/comet.png" alt="my photo">
+                            <!-- <img src="img/my_photo.jpg" alt="my photo"> -->
                         </div>
                         <h3>Who's this guy?</h3>
                         <p>
@@ -237,14 +238,14 @@
             <div class="contact__content">
                 <p class="contact__subtitle">Have a question or want to work together?</p>
                 <form action="" class="contact__form">
-                    <input placeholder="Name" type="text" name="" id="" required>
-                    <input placeholder="Enter email" type="text" name="email" id="" required>
-                    <textarea placeholder="Your message" type="text" name="message" id=""></textarea>
+                    <input placeholder="Name" type="text" id="name" required>
+                    <input placeholder="Enter email or telegram" type="text" id="email" required>
+                    <textarea placeholder="Your message" type="text" id="message" required></textarea>
                     <div id="success" class="contact__success-alert">
                         <p>Your message was sent successfully!</p>
                         <i class="far fa-times-circle"></i>
                     </div>
-                    <input class="contact__sumbit" id="submit" type="submit" value="SUBMIT">
+                    <input class="contact__sumbit" id="submit" type="button" value="SUBMIT">
                 </form>
             </div>
         </section>
@@ -408,12 +409,18 @@
 
     <footer class="footer">
         <div class="footer__body">
-            <i class="footer__icon-up fas fa-angle-double-up"></i>
+            <a href="#about"><i class="footer__icon-up fas fa-angle-double-up"></i></a>
             <div class="footer__content">
                 <ul class="footer__sosial-links">
-                    <li><a href="#git"><i class="fab fa-github-square"></i></a></li>
-                    <li><a href="#lin"><i class="fab fa-linkedin"></i></a></li>
-                    <li><a href="#telegram"><i class="fab fa-telegram-plane"></i></a></li>
+                    <li><a href="https://github.com/Doszhan-M?tab=repositories" target="_blank">
+                        <i class="fab fa-github-square"></i>
+                    </a></li>
+                    <li><a href="https://www.linkedin.com/in/doszhan-m" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a></li>
+                    <li><a href="tg://resolve?domain=DoszhanM" target="_blank">
+                        <i class="fab fa-telegram-plane">
+                    </i></a></li>
                 </ul>
                 <div class="copyright">DOSZHAN MENGALIYEV <span>©2021</span></div>
             </div>
@@ -426,6 +433,8 @@
     <script src="js/index.js"></script>
     <script src="js/progress_bar.js"></script>
     <script src="js/slaider.js"></script>
+    <script src="js/bot.js"></script>
+    <script src="js/form.js"></script>
 </body>
 
 </html>
