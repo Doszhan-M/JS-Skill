@@ -2,7 +2,7 @@ $(window).ready(function () {
   // шаг вниз перед загрузкой и показать прелоадер
   $('html, body').animate({ scrollTop: $("#projects").offset().top }, 1);
   $('html, body').animate({ scrollTop: $("#preview").offset().top }, 1);
-  jQuery('#loading').fadeOut(1000);
+  jQuery('#loading').fadeOut(2000);
 
 });
 
@@ -51,34 +51,23 @@ function isMobile() {
   return false;
 }
 
+
 // Анимация при достижении блока в зону видимости для больших объектов
 function animationBigItem() {
   $('.big_anim_item').each(function () {
-    var self = $(this),
-        height = self.offset().top + self.height();
-
-    // вычислить высоту подложки и задать ее, чтобы не дергалас страница
-    let substrate = document.querySelector('.projects__content')
-    const substrate_height = substrate.clientHeight
-    console.log(substrate_height)
-
+    var self = $(this);
+    
     if (isMobile()) {
-      if ($(document).scrollTop() + windowHeight >= height + 1500 ) {
-        self.addClass('_animation')
-      } 
-      if ($(document).scrollTop() + windowHeight <= height - 3500) {
-        self.removeClass('_animation')
-      }
+      var height = self.offset().top - 400;
+    } else {
+      var height = self.offset().top - 500;
     }
-    else {
-      if ($(document).scrollTop() + windowHeight >= height / 2) {
-        self.addClass('_animation')
-      } 
-      if ($(document).scrollTop() + windowHeight <= height - 1000 ) {
-        substrate.style.height = substrate_height + 'px'
-        self.removeClass('_animation')
 
-      }
+    if ($(document).scrollTop() >= height  ) {
+      self.addClass('_animation')
+    } 
+    if ($(document).scrollTop() < 200 ) {
+      self.removeClass('_animation')
     }
   });
 }
