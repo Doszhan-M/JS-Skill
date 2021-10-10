@@ -1,0 +1,222 @@
+@font-face {
+  font-family: "Raleway";
+  font-weight: 400;
+  src: url("../fonts/ralewaymediumitalic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "OxinWar";
+  font-weight: 400;
+  src: url("../fonts/OxinWar-oEJA.ttf") format("truetype");
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+// preloader______________________
+#p_prldr{
+  position: fixed;
+  left: 0;
+  top: 0;
+  right:0;
+  bottom:0;
+  background: #fff;
+  z-index: 30;}
+   
+  .contpre small{font-size:30px;}
+   
+  .contpre{
+  width: 250px;
+  height: 100px;
+  position: absolute;
+  left: 50%;top: 48%;
+  margin-left:-125px;
+  margin-top:-75px;
+  color:#82378f;
+  font-size:40px;
+  letter-spacing:-2px;
+  text-align:center;
+  line-height:35px;}
+   
+  #p_prldr .svg_anm {
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  background: url(../img/circles.svg) center center no-repeat;
+  background-size:41px;    
+  margin: -16px 0 0 -16px;
+}
+
+
+#loading {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  // background: #fff url("img/loader.gif") no-repeat center center;
+  z-index: 9999;
+}
+
+// _________________________________________________________________
+.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  opacity: 0;
+
+  &.fixed {
+    display: block;
+    opacity: 1;
+    transition: all 0.4s ease 0s;
+    min-width: 100%;
+    height: 47px;
+    background-color: rgb(12, 247, 247);
+    z-index: 1;
+    overflow: auto;
+    overflow-y: hidden;
+
+    &.active {
+      height: 100vh;
+    }
+  }
+
+  .header__body {
+    display: flex;
+    align-items: center;
+    justify-self: baseline;
+    width: 100%;
+    height: 44px;
+    background-color: rgb(37, 51, 63);
+    z-index: 20;
+
+    .header__burger {
+      display: none;
+
+      @media screen and (max-width: 812px) {
+        & {
+          margin-left: 85%;
+          display: block;
+          position: relative;
+          width: 30px;
+          height: 20px;
+
+          &::before,
+          &::after {
+            content: "";
+            background-color: white;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            transition: all 0.3s ease;
+          }
+
+          & span {
+            position: absolute;
+            background-color: white;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            top: 9px;
+          }
+
+          &::before {
+            top: 0;
+          }
+
+          &::after {
+            bottom: 0;
+          }
+
+          &.active::before {
+            transform: rotate(45deg);
+            top: 9px;
+          }
+
+          &.active::after {
+            transform: rotate(-45deg);
+            bottom: 9px;
+          }
+
+          &.active span {
+            transform: scale(-0);
+          }
+        }
+      }
+    }
+
+    .header__nav {
+      .header__titles {
+        display: flex;
+        justify-content: baseline;
+
+        @media screen and (max-width: 812px) {
+          & {
+            opacity: 0;
+            position: absolute;
+            z-index: -50;
+            top: -150px;
+            transition: opacity 0.5s ease 0s;
+          }
+          &.active {
+            opacity: 1;
+            position: absolute;
+            top: 45%;
+            left: 45%;
+            margin-top: 10%;
+            transform: translate(-50%, -45%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.5s ease 0s;
+          }
+        }
+
+        & li {
+          list-style: none;
+          margin-left: 30px;
+
+          @media screen and (max-width: 812px) {
+            & {
+              margin: 0 0 10% 0;
+            }
+          }
+        }
+        & a {
+          color: white;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 20px;
+          font-family: Arial, Helvetica, sans-serif;
+          margin-left: 4%;
+
+          &.header_active,
+          &:hover {
+            color:#e31b6d;
+          }
+
+
+          @media screen and (max-width: 812px) {
+            & {
+              font-family: "OxinWar", Arial, sans-serif;
+              text-transform: none;
+              font-size: 40px;
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

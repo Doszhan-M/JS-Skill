@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Doszhan">
+    <meta property="og:title" content="Web Developer">
+    <meta property="og:description" content="">
+    <meta property="og:locale" content="en">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:url" content="https://doszhan-m.github.io/">
+    <meta property="og:image" content="https://doszhan-m.github.io/img/meta_preview.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <!-- HOSTED -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- LOCAL -->
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(84292423, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/84292423" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <title>Doszhan</title>
+</head>
+
+<body>
+    <div id="p_prldr">
+        <div class="contpre">
+            <span class="svg_anm"></span><br><br><small>loading</small>
+        </div>
+    </div>
+    <script type="text/javascript">$(window).on('load', function () {
+            var $preloader = $('#p_prldr'),
+                $svg_anm = $preloader.find('.svg_anm');
+            $svg_anm.fadeOut();
+            $preloader.delay(500).fadeOut('slow');
+        });
+    </script>
+
+    <header id="main" class="header">
+        <div class="header__body">
+            <nav class="header__nav">
+                <ul class="header__titles">
+                    <li><a href="#preview" class="header__moblil_close">home</a></li>
+                    <li><a href="#about" class="header__moblil_close">about</a></li>
+                    <li><a href="#projects" class="header__moblil_close">projects</a></li>
+                    <li><a href="#projects" class="header__moblil_close">blog</a></li>
+                    <li><a href="#contact" class="header__moblil_close">contact</a></li>
+                </ul>
+            </nav>
+            <div class="header__burger"><span></span></div>
+        </div>
+    </header>
+
+    <main>
+        <section id="preview" class="preview">
+            <video autoplay muted loop preload="auto" poster="img/comet.png" class="preview__video">
+                <source type="video/mp4" src="img/comet.mp4">
+                <source type="video/webm" src="img/comet.webm">
+            </video>
+
+            <div class="preview__title">
+                <p>hello<span>,</span> i<span>'</span>m <span>doszhan</span></p>
+                <p>i<span>'</span>m a fullstack developer</p>
+                <a href="#about">
+                    <button type="button">
+                        view my work
+                        <i class="far fa-arrow-alt-circle-down"></i>
+                    </button>
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="section-title">
+                <div class="section-title__title anim_item _animation">About me</div>
+                <svg class="anim_item _animation" viewBox="0 0 100 5">
+                    <line x1="0" y1="0" x2="100" y2="0" stroke="black" stroke-width="2" />
+                </svg>
+            </div>
+            <div class="about__content">
+                <div class="assurances">
+                    <div class="assurances__item">
+                        <i class="fas fa-fighter-jet anim_item "></i>
+                        <h3>Fast</h3>
+                        <p>Fast load times and lag free interaction, my highest priority</p>
+                    </div>
+                    <div class="assurances__item">
+                        <i class="fas fa-dice-d20 anim_item "></i>
+                        <h3>Reliability</h3>
+                        <p>I pay special attention to the stability of the server side</p>
+                    </div>
+                    <div class="assurances__item">
+                        <i class="fas fa-cogs anim_item "></i>
+                        <h3>Dynamic</h3>
+                        <p>Websites don't have to be static, I love making pages come to life.</p>
+                    </div>
+                    <div class="assurances__item">
+                        <i class="far fa-handshake anim_item "></i>
+                        <h3>Support</h3>
+                        <p>I always try to build long-term relationships with clients</p>
+                    </div>
+                </div>
+                <div class="about_myself">
+                    <div class="about_myself__desc">
+                        <img src="img/photo1.jpg" alt="my photo">
+                        <h3>Who's this guy?</h3>
+                        <p>
+                            I am a web developer from Almaty. I mainly use the Django and React frameworks in my
+                            projects. Also I write bots for social networks such as
+                            telegram and slack.
+                        </p>
+                        <a href="#contact">Let's make something special!</a>
+                    </div>
+                    <div class="about_myself__slills">
+                        <div class="progress_bar">
+                            <div id="PYTHON" class="w3-container w3-teal" style="width:20%"><span>PYTHON</span>
+                            </div>
+                            <div id="PYTHON_percent" class="w3-container" style="width:17%">20%</div>
+                            <p style="display: none;">70</p>
+                        </div>
+
+                        <div class="progress_bar">
+                            <div id="DJANGO" class="w3-container w3-teal" style="width:20%"><span>DJANGO</span>
+                            </div>
+                            <div id="DJANGO_percent" class="w3-container" style="width:17%">20%</div>
+                            <p style="display: none;">80</p>
+                        </div>
+
+                        <div class="progress_bar">
+                            <div id="DRF" class="w3-container w3-teal" style="width:20%"><span>DRF</span></div>
+                            <div id="DRF_percent" class="w3-container" style="width:17%">20%</div>
+                            <p style="display: none;">65</p>
+                        </div>
+
+                        <div class="progress_bar">
+                            <div id="JavaScript" class="w3-container w3-teal" style="width:20%">
+                                <span>JAVASCRIPT</span>
+                            </div>
+                            <div id="JavaScript_percent" class="w3-container" style="width:17%">20%</div>
+                            <p style="display: none;">65</p>
+                        </div>
+
+                        <div class="progress_bar">
+                            <div id="REACT" class="w3-container w3-teal" style="width:20%"><span>REACT</span></div>
+                            <div id="REACT_percent" class="w3-container" style="width:17%">20%</div>
+                            <p style="display: none;">55</p>
+                        </div>
+
+                        <div class="progress_bar">
+                            <div id="HTML" class="w3-container w3-teal" style="width:20%"><span>HTML</span></div>
+                            <div id="HTML_percent" class="w3-container" style="width:17%">20%</div>
+                            <p style="display: none;">90</p>
+                        </div>
+
+                        <div class="progress_bar">
+                            <div id="CSS" class="w3-container w3-teal style=" width:20%"><span>CSS</span></div>
+                            <div id="CSS_percent" class="w3-container" style="width:17%">20%</div>
+                            <p style="display: none;">90</p>
+                        </div>
+
+                        <div class="progress_bar">
+                            <div id="SaaS" class="w3-container w3-teal" style="width:20%"><span>SaaS</span></div>
+                            <div id="SaaS_percent" class="w3-container" style="width:17%">20%</div>
+                            <p style="display: none;">85</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="section-title">
+                <div class="section-title__title anim_item _animation">projects</div>
+                <svg class="anim_item _animation" viewBox="0 0 100 5">
+                    <line x1="0" y1="0" x2="100" y2="0" stroke="black" stroke-width="2" />
+                </svg>
+            </div>
+            <div class="projects__content">
+                <div class="projects__groupe big_anim_item _animation">
+                    <div class="projects__item">
+                        <img src="img/slacbot.png" alt="project pictute">
+                        <div class="projects__title projects__title_center">
+                            <h3>PARSER SLACKBOT <p>Python/Django</p>
+                            </h3>
+                            <a href="#slackbot">learn more</a>
+                        </div>
+                    </div>
+                    <div class="projects__item">
+                        <img src="img/websocket.png" alt="project pictute">
+                        <div class="projects__title projects__title_center">
+                            <h3>websocket chat <p>DRF/JavaScript/Ajax</p>
+                            </h3>
+                            <a href="#websocket_chat">learn more</a>
+                        </div>
+                    </div>
+                    <div class="projects__item">
+                        <img src="img/fanblog.jpg" alt="project pictute">
+                        <div class="projects__title projects__title_center">
+                            <h3>fan blog<p>Python/Django/BootStrap</p>
+                            </h3>
+                            <a href="#fanblog">learn more</a>
+                        </div>
+                    </div>
+                    <div class="projects__item">
+                        <img src="img/trashcan.jpg" alt="project pictute">
+                        <div class="projects__title projects__title_center">
+                            <h3>automatic trash bin<p>Arduino C</p>
+                            </h3>
+                            <a href="#trashcan">learn more</a>
+                        </div>
+                    </div>
+                    <div class="projects__item">
+                        <img src="img/reportbot.jpg" alt="project pictute">
+                        <div class="projects__title projects__title_center">
+                            <h3>telegram report bot<p>Django/pyTelegramBotAPI</p>
+                            </h3>
+                            <a href="#reportbot">learn more</a>
+                        </div>
+                    </div>
+                    <div class="projects__item">
+                        <img src="img/seabattle.jpg" alt="project pictute">
+                        <div class="projects__title projects__title_center">
+                            <h3>seabattle<p>Python</p>
+                            </h3>
+                            <a href="#seabattle">learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+                <path d="M0 0 L50 100 L100 0 Z" fill="rgb(230, 223, 223)" stroke="white"></path>
+            </svg>
+            <div class="section-title">
+                <div class="section-title__title anim_item _animation">contact</div>
+                <svg class="anim_item _animation" viewBox="0 0 100 5">
+                    <line x1="0" y1="0" x2="100" y2="0" stroke="black" stroke-width="2" />
+                </svg>
+            </div>
+            <div class="contact__content">
+                <p class="contact__subtitle">Have a question or want to work together?</p>
+                <form action="" class="contact__form">
+                    <input placeholder="Name" type="text" id="name" required>
+                    <input placeholder="Enter email or telegram" type="text" id="email" required>
+                    <textarea placeholder="Your message" type="text" id="message" required></textarea>
+                    <div id="success" class="contact__success-alert">
+                        <p>Your message was sent successfully!</p>
+                        <i class="far fa-times-circle contact__alert_close"></i>
+                    </div>
+                    <div id="userError" class="contact__error-alert">
+                        <p>Fill in all the form fields please!</p>
+                        <i class="far fa-times-circle contact__alert_close"></i>
+                    </div>
+                    <div id="systemError" class="contact__error-alert">
+                        <p>System error, please try later!</p>
+                        <i class="far fa-times-circle contact__alert_close"></i>
+                    </div>
+                    <input class="contact__sumbit" onclick="ym(84292423,'reachGoal','send_data') " id="submit"
+                        type="button" value="SUBMIT">
+                </form>
+            </div>
+        </section>
+
+
+        <!-- Popup sections -->
+        <section id="slackbot" class="popup">
+            <a href="#main" class="popup__dark-area_close"></a>
+            <div class="popup__body">
+                <div class="popup__content">
+                    <div class="slaider">
+                        <div class="slaider__img-container">
+                            <img src="img/slacbot_1.png" class="slaider__img" alt="popup picture">
+                            <img src="img/slacbot_2.png" class="slaider__img" alt="popup picture">
+                            <img src="img/slacbot_3.png" class="slaider__img" alt="popup picture">
+                            <img src="img/slacbot_4.png" class="slaider__img" alt="popup picture">
+                            <img src="img/slacbot_5.png" class="slaider__img" alt="popup picture">
+                        </div>
+                    </div>
+                    <button class="slaider__btn_left"><i class="fas fa-angle-double-left"></i></button>
+                    <button class="slaider__btn_right"><i class="fas fa-angle-double-right"></i></button>
+                    <h2>parser slackbot</h2>
+                    <div class="popup__text">
+                        The application parses the site for new posts and saves it to the database. Further, according
+                        to the specified settings, it sends out messages to the channels of the slack program.
+                    </div>
+                    <a href="https://github.com/Doszhan-M/SlackBot" class="popup__button" target="_blank">view code</a>
+                    <a href="#main" class="popup__close"><i class="far fa-times-circle"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="websocket_chat" class="popup">
+            <a href="#main" class="popup__dark-area_close"></a>
+            <div class="popup__body">
+                <div class="popup__content">
+                    <div class="slaider">
+                        <div class="slaider__img-container">
+                            <img src="img/websocket_1.png" class="slaider__img" alt="popup picture">
+                            <img src="img/websocket_2.png" class="slaider__img" alt="popup picture">
+                            <img src="img/websocket_3.png" class="slaider__img" alt="popup picture">
+                            <img src="img/websocket_4.png" class="slaider__img" alt="popup picture">
+                            <img src="img/websocket_5.png" class="slaider__img" alt="popup picture">
+
+                        </div>
+                    </div>
+
+                    <button class="slaider__btn_left"><i class="fas fa-angle-double-left"></i></button>
+                    <button class="slaider__btn_right"><i class="fas fa-angle-double-right"></i></button>
+
+                    <h2>chat room</h2>
+                    <div class="popup__text">
+                        Demo presentation of chat rooms on websocket js and django-channels. Can be embedded in any
+                        django application.
+                    </div>
+                    <a href="https://github.com/Doszhan-M/WebSocket-Chat" class="popup__button" target="_blank">view
+                        code</a>
+                    <a href="#main" class="popup__close"><i class="far fa-times-circle"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="fanblog" class="popup">
+            <a href="#main" class="popup__dark-area_close"></a>
+            <div class="popup__body">
+                <div class="popup__content">
+                    <div class="slaider">
+                        <div class="slaider__img-container">
+                            <img src="img/fanblog_1.png" class="slaider__img" alt="popup picture">
+                            <img src="img/fanblog_2.png" class="slaider__img" alt="popup picture">
+                            <img src="img/fanblog_3.png" class="slaider__img" alt="popup picture">
+                            <img src="img/fanblog_4.png" class="slaider__img" alt="popup picture">
+                        </div>
+                    </div>
+                    <button class="slaider__btn_left"><i class="fas fa-angle-double-left"></i></button>
+                    <button class="slaider__btn_right"><i class="fas fa-angle-double-right"></i></button>
+                    <h2>fan blog web app</h2>
+                    <div class="popup__text">
+                        WebSite for fan service on gaming topics
+                    </div>
+                    <a href="https://github.com/Doszhan-M/Fan_Blog" class="popup__button" target="_blank">view code</a>
+                    <a href="#main" class="popup__close"><i class="far fa-times-circle"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="trashcan" class="popup">
+            <a href="#main" class="popup__dark-area_close"></a>
+            <div class="popup__body">
+                <div class="popup__content">
+                    <div class="slaider">
+                        <div class="slaider__img-container">
+                            <video src="img/trashcan_video.mp4" class="slaider__img" controls="controls"></video>
+                            <img src="img/trashcan_1.jpg" alt="popup picture" class="slaider__img">
+                            <img src="img/trashcan_2.jpg" alt="popup picture" class="slaider__img">
+                            <img src="img/trashcan_3.jpg" alt="popup picture" class="slaider__img">
+                        </div>
+                    </div>
+                    <button class="slaider__btn_left"><i class="fas fa-angle-double-left"></i></button>
+                    <button class="slaider__btn_right"><i class="fas fa-angle-double-right"></i></button>
+                    <h2>atomatic trash bin</h2>
+                    <div class="popup__text">
+                        Homemade trash bin with automatic lid opening. Microcontroller: arduino uno, servo: MG996.
+                    </div>
+                    <a href="https://github.com/Doszhan-M/Automatic-trash-can" class="popup__button"
+                        target="_blank">view code</a>
+                    <a href="#main" class="popup__close"><i class="far fa-times-circle"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="reportbot" class="popup">
+            <a href="#main" class="popup__dark-area_close"></a>
+            <div class="popup__body">
+                <div class="popup__content">
+                    <div class="slaider">
+                        <div class="slaider__img-container">
+                            <img src="img/reportbot_1.jpg" alt="popup picture" class="slaider__img">
+                            <img src="img/reportbot_2.jpg" alt="popup picture" class="slaider__img">
+                        </div>
+                    </div>
+                    <button class="slaider__btn_left"><i class="fas fa-angle-double-left"></i></button>
+                    <button class="slaider__btn_right"><i class="fas fa-angle-double-right"></i></button>
+                    <h2>telegram report bot</h2>
+                    <div class="popup__text">
+                        The purpose of the program is to keep a journal of loans between two users in Telegram app.
+                    </div>
+                    <a href="https://github.com/Doszhan-M/TelegramReportBot" class="popup__button" target="_blank">view
+                        code</a>
+                    <a href="#main" class="popup__close"><i class="far fa-times-circle"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="seabattle" class="popup">
+            <a href="#main" class="popup__dark-area_close"></a>
+            <div class="popup__body">
+                <div class="popup__content">
+                    <div class="slaider">
+                        <div class="slaider__img-container">
+                            <img src="img/seabattle_1.png" alt="popup picture" class="slaider__img">
+                            <img src="img/seabattle_4.png" alt="popup picture" class="slaider__img">
+                            <img src="img/seabattle_5.png" alt="popup picture" class="slaider__img">
+                            <img src="img/seabattle_2.png" alt="popup picture" class="slaider__img">
+                            <img src="img/seabattle_3.png" alt="popup picture" class="slaider__img">
+                        </div>
+                    </div>
+                    <button class="slaider__btn_left"><i class="fas fa-angle-double-left"></i></button>
+                    <button class="slaider__btn_right"><i class="fas fa-angle-double-right"></i></button>
+                    <h2>sea battle</h2>
+                    <div class="popup__text">
+                        Console game Sea Battle.
+                    </div>
+                    <a href="https://github.com/Doszhan-M/SeaBattle" class="popup__button" target="_blank">view code</a>
+                    <a href="#main" class="popup__close"><i class="far fa-times-circle"></i></a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__body">
+            <a href="#about"><i class="footer__icon-up fas fa-angle-double-up"></i></a>
+            <div class="footer__content">
+                <ul class="footer__sosial-links">
+                    <li><a href="https://github.com/Doszhan-M?tab=repositories" target="_blank">
+                            <i class="fab fa-github-square"></i>
+                        </a></li>
+                    <li><a href="https://www.linkedin.com/in/doszhan-m" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a></li>
+                    <li><a href="tg://resolve?domain=DoszhanM" target="_blank">
+                            <i class="fab fa-telegram-plane">
+                            </i></a></li>
+                </ul>
+                <div class="copyright">DOSZHAN MENGALIYEV <span>©2021</span></div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- HOSTED -->
+    <script src="https://kit.fontawesome.com/b33bf1e810.js" crossorigin="anonymous"></script>
+    <!-- LOCAL -->
+    <script src="js/index.js"></script>
+    <script src="js/progress_bar.js"></script>
+    <script src="js/slaider.js"></script>
+    <script src="js/bot.js"></script>
+    <script src="js/form.js"></script>
+</body>
+
+</html>
