@@ -1,1 +1,0 @@
-document.write("aaa"),document.write("aaab");

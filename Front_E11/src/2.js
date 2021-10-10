@@ -1,5 +1,5 @@
-export {a, b, c}
+//  {a, b, c}
 
-const a = 5;
-const b = 7;
-const c = 8;
+export const a = 5;
+export const b = 7;
+export const c = 8;
