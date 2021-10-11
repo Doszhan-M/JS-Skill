@@ -1,0 +1,19 @@
+{
+  "name": "front_e13",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "webpack": "^5.58.1",
+    "webpack-cli": "^4.9.0",
+    "webpack-dev-server": "^4.3.1"
+  },
+  "scripts": {
+    "start:dev": "webpack serve --config ./webpack.config.js",
+    "build": "webpack",
+    "start": "npx webpack --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

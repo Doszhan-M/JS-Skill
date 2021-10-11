@@ -1,0 +1,41 @@
+{
+  // - - - Настройки pythonPath - - - - - - - - - - 
+  "python.pythonPath": "",
+  
+  // - - - Настройки liveSassCompile - - - - - - - - 
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css"
+    },
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "/css"
+    },
+  ],
+
+  "editor.snippetSuggestions": "top",
+  
+  // - - - Настройки cSpell - - - - - - - - - - - - -
+  "cSpell.language": "en,ru",
+  "cSpell.ignoreWords": [
+    "mocerts_db",
+    "Предоплаченные",
+    "серт",
+    "CHATID",
+    "QIWI",
+    "signup",
+    "токену",
+    "ChocoTest",
+    "todolist",
+    "signinPage",
+    "minmax",
+    "todocreate",
+    "todoadd__wrapper",
+    "алерт",
+    "slaider",
+    "скрола",
+  ],
+}
