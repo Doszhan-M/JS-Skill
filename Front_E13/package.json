@@ -7,7 +7,7 @@
     "webpack_dev": "webpack serve --config ./webpack.dev.js",
     "webpack_prod": "webpack --config ./webpack.prod.js",
     "json-server": "json-server --watch database.json --port 3001",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "foo": "echo \"Error: I SHOULD FAIL LOLOLOLOLOL\" && exit 1"
   },
   "keywords": [],
   "author": "",
@@ -18,15 +18,15 @@
     "webpack": "^5.58.2",
     "webpack-cli": "^4.9.0",
     "webpack-dev-server": "^4.3.1"
+    
   },
   "dependencies": {
     "clean-webpack-plugin": "^4.0.0",
     "husky": "^7.0.2"
   },
-  "husky": {    
-    "hooks": {      
-      "pre-commit": "npm run test", 
-      "pre-push": "YOUR_COMMAND_HERE"   
-    }  
- }
+  "pre-commit": [
+    "foo",
+    "bar",
+    "test"
+  ]
 }
