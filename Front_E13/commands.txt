@@ -1,3 +1,7 @@
 npx webpack --watch
 npm run start
 http-server
+
+npm run webpack_dev
+npm run webpack_prod
+npm run json-server
