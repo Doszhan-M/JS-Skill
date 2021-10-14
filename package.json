@@ -1,0 +1,26 @@
+{
+  "name": "js-skillfactory",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "pre-commit": "^1.2.2"
+  },
+  "devDependencies": {
+    "husky": "^7.0.2"
+  },
+  "scripts": {
+    "lint": "cd ./Front_E13 && npm run lint  --color",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Doszhan-M/JS-SkillFactory.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Doszhan-M/JS-SkillFactory/issues"
+  },
+  "homepage": "https://github.com/Doszhan-M/JS-SkillFactory#readme"
+}
