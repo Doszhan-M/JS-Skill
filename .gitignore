@@ -1,12 +1,12 @@
 # My temp files
-/venv/
-/temp/
+**/venv/
+**/temp/
 **/.idea/
+**/node_modules/
 **/__pycache__/
-/server_update/
 */*_Zone.Identifier
 */*:Zone.Identifier
-/node_modules/
+
 
 
 # Byte-compiled / optimized / DLL files
