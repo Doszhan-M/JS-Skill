@@ -1,5 +1,12 @@
 # My temp files
-**/node_modules/
+/venv/
+/temp/
+**/.idea/
+**/__pycache__/
+/server_update/
+*/*_Zone.Identifier
+*/*:Zone.Identifier
+/node_modules/
 
 
 # Byte-compiled / optimized / DLL files
@@ -14,7 +21,6 @@ __pycache__/
 .Python
 build/
 develop-eggs/
-dist/
 downloads/
 eggs/
 .eggs/
@@ -58,11 +64,6 @@ coverage.xml
 # Translations
 *.mo
 *.pot
-
-# Django stuff:
-*.log
-local_settings.py
-
 
 # Flask stuff:
 instance/
@@ -119,7 +120,6 @@ venv.bak/
 
 # Rope project settings
 .ropeproject
-
 # mkdocs documentation
 /site
 
