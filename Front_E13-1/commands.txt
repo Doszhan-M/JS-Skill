@@ -1,3 +1,0 @@
-npx webpack --watch
-npm run start
-http-server
